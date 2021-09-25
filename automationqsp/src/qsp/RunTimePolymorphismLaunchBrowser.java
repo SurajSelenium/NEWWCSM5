@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class RunTimePolymorphismLaunchBrowser {
 	static WebDriver driver;
 
+
 	public static void main(String[] args) throws InterruptedException {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Browser name either chrome or firefox");
