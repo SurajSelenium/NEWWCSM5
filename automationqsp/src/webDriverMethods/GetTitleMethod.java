@@ -14,7 +14,8 @@ public class GetTitleMethod {
 		System.out.println(titleOfSeleniumWebPage);
 		
 
-			}
 }
+}
+
 
  
