@@ -14,7 +14,7 @@ public class XpathUsingUniqueAttribute {
 		Thread.sleep(3000);
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
+		driver.findElement(By.xpath("//input [@id='txtUsername']")).sendKeys("Admin");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("admin123");
 		Thread.sleep(2000);
