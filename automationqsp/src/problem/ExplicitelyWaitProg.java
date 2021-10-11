@@ -16,7 +16,7 @@ public class ExplicitelyWaitProg {
 		driver.manage().window().maximize();
 		driver.get("http://laptop-smc8hiai/login.do");
 		
-        
+       //use of explicitelywait 
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.titleContains("Login"));
 		System.out.println("THE LOGIN PAGE TITLE IS VERIFIED--TEST CASE IS PASS");
