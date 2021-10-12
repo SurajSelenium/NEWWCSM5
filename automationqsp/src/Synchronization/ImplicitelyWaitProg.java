@@ -1,20 +1,26 @@
-package problem;
+package Synchronization;
+
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Problem4 {
-
+public class ImplicitelyWaitProg {
 	public static void main(String[] args) throws InterruptedException {
+
+
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");                                                                                            
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.instagram.com");
-		driver.findElement(By.xpath("//input[contains(@name,'user')]")).sendKeys("surajsurajsuraj");
-		driver.findElement(By.xpath("//input[contains(@name,'pass')]")).sendKeys("sawantsawantsawant");
-		driver.findElement(By.xpath("//button[contains(@class,'L3NKy')]")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get("https://www.flipkart.com");
+		
+		driver.findElement(By.xpath("//button[text()='✕']")).click();
+		
+		driver.findElement(By.xpath("//span[.='Cart']")).click();
+		
+		driver.findElement(By.xpath("//button[.='surajLogin']")).click();
 
 	}
-
 }

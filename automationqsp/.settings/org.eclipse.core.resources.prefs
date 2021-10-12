@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
-encoding//src/problem/ImplicitelyWaitProg.java=UTF-8
-encoding//src/problem/Problem3.java=UTF-8
+encoding//src/Synchronization/ImplicitelyWaitProg.java=UTF-8
+encoding//src/Synchronization/Problem3.java=UTF-8
 encoding//src/xpathLocator/FlipkartFilters.java=UTF-8
 encoding//src/xpathLocator/XpathUsingDIAmazon.java=UTF-8
 encoding//src/xpathLocator/XpathUsingDependentIndependantMethod.java=UTF-8
